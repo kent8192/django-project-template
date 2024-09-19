@@ -9,7 +9,7 @@ DATABASES = {
         "USER": os.getenv("POSTGRESQL_USERNAME", "user"),
         "PASSWORD": os.getenv("POSTGRESQL_PASSWORD", "password"),
         "HOST": os.getenv("POSTGRESQL_HOST", "db"),
-        "PORT": os.getenv("POSTGRESQL_PORT", "5432"),
+        "PORT": int(os.getenv("POSTGRESQL_PORT", "5432")),
     }
 }
 
